@@ -1,6 +1,6 @@
 <?php
 
-namespace SubRipManagerBundle\Manager;
+namespace Robbixc\SubRipManagerBundle\Manager;
 
 class srtManager
 {

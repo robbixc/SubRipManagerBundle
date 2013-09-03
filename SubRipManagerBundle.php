@@ -1,6 +1,6 @@
 <?php
 
-namespace SubRipManagerBundle;
+namespace Robbixc\SubRipManagerBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

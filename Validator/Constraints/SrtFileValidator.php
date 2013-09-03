@@ -1,6 +1,6 @@
 <?php
 
-namespace Itasa\PannelloBundle\Validator\Constraints;
+namespace Robbixc\SubRipManagerBundle\Validator\Constraints;
 
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;

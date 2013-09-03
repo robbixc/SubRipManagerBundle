@@ -1,6 +1,6 @@
 <?php
 
-namespace Robbixc\SubRipManager\Validator\Constraints;
+namespace Robbixc\SubRipManagerBundle\Validator\Constraints;
 
 use Symfony\Component\Validator\Constraints\File;
 
