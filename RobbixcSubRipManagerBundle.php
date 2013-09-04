@@ -4,6 +4,6 @@ namespace Robbixc\SubRipManagerBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class SubRipManagerBundle extends Bundle
+class RobbixcSubRipManagerBundle extends Bundle
 {
 }

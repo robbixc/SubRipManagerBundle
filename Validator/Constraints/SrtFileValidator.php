@@ -6,13 +6,14 @@ use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 use Symfony\Component\Validator\Constraints\File;
 use Symfony\Component\Validator\Constraints\FileValidator;
+use Robbixc\SubRipManagerBundle\Manager\SrtManager;
 
 class SrtFileValidator extends FileValidator
 {
     /* @var \SrtParser\srtManager */
     protected $srtManager;
     
-    public function __construct(\SrtParser\srtManager $srtManager)
+    public function __construct(SrtManager $srtManager)
     {
         $this->srtManager = $srtManager;
         

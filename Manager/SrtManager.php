@@ -2,7 +2,7 @@
 
 namespace Robbixc\SubRipManagerBundle\Manager;
 
-class srtManager
+class SrtManager
 {
     /**
      * Load an instance of the srt file parser
