@@ -1,8 +1,9 @@
-  robbixc.subrip_manager:
+ services:
+    subrip_manager:
         class:  Robbixc\SubRipManagerBundle\Manager\srtManager
-  validator.unique.srtfile:
-        class: Robbixc\SubRipManagerBundle\Validator\Constraints\SrtFileValidator
-        arguments: ["@robbixc.subrip_manager"]
+    validator.unique.srtfile:
+        class:  Robbixc\SubRipManagerBundle\Validator\Constraints\SrtFileValidator
+        arguments: ["@subrip_manager"]
         tags:
             - { name: validator.constraint_validator, alias: srtfile_validator}      
         
