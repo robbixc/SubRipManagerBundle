@@ -2,27 +2,26 @@
 
 namespace Robbixc\SubRipManagerBundle\Validator\Constraints;
 
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Validator\Constraint;
-use Symfony\Component\Validator\ConstraintValidator;
 use Symfony\Component\Validator\Constraints\File;
 use Symfony\Component\Validator\Constraints\FileValidator;
 use Robbixc\SubRipManagerBundle\Manager\SrtManager;
 
 class SrtFileValidator extends FileValidator
 {
-    /* @var \SrtParser\srtManager */
     protected $srtManager;
-    
+
     public function __construct(SrtManager $srtManager)
     {
         $this->srtManager = $srtManager;
-        
+
     }
     public function validate($value, Constraint $constraint)
     {
-      parent::validate($value, new \Symfony\Component\Validator\Constraints\File);
-      
-      if($value instanceof \Symfony\Component\HttpFoundation\File\UploadedFile)
+      parent::validate($value, new File);
+
+      if($value instanceof UploadedFile)
       {
         try
         {
@@ -32,7 +31,7 @@ class SrtFileValidator extends FileValidator
         {
            $this->context->addViolation($constraint->notValidMessage);
         }
-      } 
+      }
       return;
     }
 }

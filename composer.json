@@ -12,8 +12,12 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0",
-        "delphiki/subrip-file-parser": "dev-master"
+        "php": ">=5.6.0",
+        "symfony/config": "~2.7",
+        "symfony/dependency-injection": "~2.7",
+        "symfony/validator": "~2.7",
+        "symfony/http-foundation": "~2.7",
+        "captioning/captioning": "~2.0"
     },
     "autoload": {
         "psr-0": {
