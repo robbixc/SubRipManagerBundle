@@ -14,6 +14,6 @@ class SrtManager
      */
     public function load($filename, $encoding = '')
     {
-        return new SubripFile($filename, $encoding);
+        return new SubripFile($filename, $encoding, false, false);
     }
 }
