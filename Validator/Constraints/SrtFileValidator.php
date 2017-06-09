@@ -32,6 +32,5 @@ class SrtFileValidator extends FileValidator
            $this->context->addViolation($constraint->notValidMessage);
         }
       }
-      return;
     }
 }
