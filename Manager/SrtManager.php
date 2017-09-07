@@ -12,7 +12,7 @@ class SrtManager
      * @param string $encoding custom encoding definition
      * @return SubripFile
      */
-    public function load($filename, $encoding = '')
+    public function load($filename, $encoding = null)
     {
         return new SubripFile($filename, $encoding, false, false);
     }

@@ -5,5 +5,5 @@ services:
         class:  Robbixc\SubRipManagerBundle\Validator\Constraints\SrtFileValidator
         arguments: ["@subrip_manager"]
         tags:
-            - { name: validator.constraint_validator, alias: srtfile_validator}      
-        
+            - { name: validator.constraint_validator}
+
